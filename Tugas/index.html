@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <meta>
+        <title>Buku Tabungan</title>
+        <link rel="stylesheet" href="style.css"/>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    </head>
+    <body>
+        <div id="main">
+            <div id="content" class="container">
+                <h1>Buku Tabungan</h1>
+                <table class="table table-bordered">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th>Tanggal</th>
+                            <th>Keterangan</th>
+                            <th>Debit</th>
+                            <th>Kredit</th>
+                            <th>Saldo</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tablebody">
+                    </tbody>
+                </table>
+                <hr/>
+                <h3>Tambah Entry</h3>
+                <table class="table table-bordered">
+                    <tbody>
+                        <tr>
+                            <td>Sisi</td>
+                            <td>
+                                <select id="sisi" class="form-control">
+                                    <option value="Debit">Debit</option>
+                                    <option value="Kredit">Kredit</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Keterangan</td>
+                            <td>
+                                <input id="keterangan" type="text" class="form-control"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Jumlah</td>
+                            <td>
+                                <input id="jumlah" type="text" class="form-control"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>
+                                <button type="button" class="btn btn-dark" onclick="simpan()">Simpan</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
